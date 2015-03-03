@@ -1,0 +1,4 @@
+-- DROP TABLE IF EXISTS `#__tpcxsocial_forum_categories`;
+-- DROP TABLE IF EXISTS `#__tpcxsocial_forum_posts`;
+-- DROP TABLE IF EXISTS `#__tpcxsocial_forum_topics`;
+-- DROP TABLE IF EXISTS `#__tpcxsocial_users`;

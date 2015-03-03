@@ -1,0 +1,1 @@
+ALTER TABLE `#__tpcxtags` ADD subcategory varchar(255) NOT NULL;

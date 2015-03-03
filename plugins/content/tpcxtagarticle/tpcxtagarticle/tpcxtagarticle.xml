@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="tpcxtagarticle">
+        <fieldset name="tpcxtagarticle" label="PLG_CONTENT_TPCXTAGARTICLE_SLIDER_LABEL">
+            <field
+                name="listthematiques"
+                type="sql"
+                id="listthematiques"
+                query="SELECT id AS value, tag as listthematiques FROM #__tpcxtags WHERE category = 'thematique' ORDER BY tag"
+                multiple="true"
+                description="PLG_CONTENT_TPCXTAGARTICLE_FIELD_TAGS_DESC"
+                label="PLG_CONTENT_TPCXTAGARTICLE_FIELD_TAGS_LABEL"
+                size="10"
+            />
+            <field
+                name="listcontinents"
+                type="sql"
+                id="listcontinents"
+                query="SELECT id AS value, tag as listcontinents FROM #__tpcxtags WHERE category = 'continent' ORDER BY tag"
+                multiple="true"
+                description="PLG_CONTENT_TPCXTAGARTICLE_FIELD_CONTINENTS_DESC"
+                label="PLG_CONTENT_TPCXTAGARTICLE_FIELD_CONTINENTS_LABEL"
+                size="10"
+            />     
+            <field
+                name="listpays"
+                type="sql"
+                id="listpays"
+                query="SELECT id AS value, tag as listpays FROM #__tpcxtags WHERE category = 'pays' ORDER BY tag"
+                multiple="true"
+                description="PLG_CONTENT_TPCXTAGARTICLE_FIELD_PAYS_DESC"
+                label="PLG_CONTENT_TPCXTAGARTICLE_FIELD_PAYS_LABEL"
+                size="10"
+            />           
+            <field
+                name="listpartenaires"
+                type="sql"
+                id="listpartenaires"
+                query="SELECT id AS value, title as listpartenaires FROM #__content WHERE catid = '9' ORDER BY title ASC"
+                multiple="true"
+                description="PLG_CONTENT_TPCXTAGARTICLE_FIELD_PARTENAIRE_DESC"
+                label="PLG_CONTENT_TPCXTAGARTICLE_FIELD_PARTENAIRE_LABEL"
+                size="10"
+            />          
+        </fieldset>
+    </fields>
+</form>

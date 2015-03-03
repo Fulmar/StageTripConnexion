@@ -1,0 +1,421 @@
+/* ==========================================================================
+                                    General
+   ========================================================================== */
+#absolute #popup-email,
+#absolute .push-bottom,
+#absolute .custom{
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper-big,
+#content .wrapper-big,
+#travel-project-container .wrapper-big,
+.annuaire-home .wrapper-big,
+#products-before-content .wrapper-big,
+#products-after-content .wrapper-big ,
+#products-enlarge-top-content .wrapper-big
+#products-enlarge-bottom-content .wrapper-big,
+#products-before-content .banner-title .wrapper-big,
+#content .banner-title .wrapper-big,
+#products-after-content .banner-title .wrapper-big,
+#products-before-content .content-bottom .wrapper-big,
+#products-after-content .content-bottom .wrapper-big
+{
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    background: none;
+} 
+#products-enlarge-bottom-content .wrapper, #products-enlarge-top-content .wrapper{
+  background:none;
+    margin-left:40px;
+}
+#devis-sur-mesure .wrapper-big, #concept-home .wrapper-big{
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    position:static;
+}
+#concept-home,#products-enlarge-bottom-content{
+    display:none; 
+}
+#devis-sur-mesure .wrapper-big .devis-sur-mesure .button button.submit {
+    margin-left: 0px;
+}
+.flech-header{
+    display:none; 
+}
+#middle .bg-top-middle {
+    position: absolute;
+    top: 0;
+}
+
+.magazinehighlight {
+    clear: both;
+}
+
+.magazinepushs ul li.secondfirst .push .visuel .tearing,
+.magazinepushs ul li.secondlast .push .visuel .tearing,
+.magazinepushs ul li.general .push .visuel .tearing,
+.item-page .tearing,
+.items .item .visuel .tearing,
+.magazinehighlight .push .visuel .tearing,
+.products ul li .push .visuel .tearing,
+.items-produit ul.list-items li .push .visuel .tearing {
+    display: none;
+}
+
+.magazinepushs ul li .push .visuel .btn, .magazinehighlight .push .visuel .btn, .products ul li .push .visuel .btn, .items-produit ul.list-items li .push .visuel .btn {
+    display: none;
+}
+
+/* ==========================================================================
+                                    Header
+   ========================================================================== */
+#hp-header {
+    display: none;
+}
+
+.header-container {
+    position: relative;
+    display: none;
+}
+
+.mobile-header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 63px;
+    margin-bottom: 6px;
+    background: #ffffff url('../images/bg-header.jpg') top left repeat-x;
+}
+.mobile-header .bg-bottom-header {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: url('../images/bg-codpiece-white-bottom.png') top left repeat-x;
+}
+.mobile-header .logo-tablette {
+    display:block;
+    margin: 0 30px;
+    padding-top: 10px;
+    width: 159px;
+    height: 43px;
+}
+.mobile-header .logo-mobile {
+    display:none;
+}
+
+.stamp {
+  display: none;
+    right: 0;
+}
+
+#header .intro {
+    float: right;
+}
+
+#header .intro p {
+    font: 400 16px/100% "LatoRegular", sans-serif
+}
+
+/* Divers */
+.carousel-products ul {
+    width: 20000em;
+}
+.carousel-products-mobile{
+	display:block;
+}
+.carousel-products-1020{
+	display:none;
+}
+.products .push .text{
+	position:relative;
+	transform: translateX(0);
+	background:none;
+    height: auto;
+    margin-left: 0;
+}
+.products p.home-page,
+.module.magazine p.home-page, .module.magazine p.title-header {
+    font-size: 18px;
+    padding-top: 8px;
+	margin-right:50px
+}
+
+/* Destination */
+.mobile-destination {
+    display: block;
+    min-height: 44px;
+    background: #04a4a3;
+    position: relative;
+    margin-bottom: 9px;
+}
+.mobile-destination .bg-top-destination {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: url('../images/bg-codpiece-white-top.png') top left repeat-x;
+}
+.mobile-destination p.intro {
+    float: left;
+    padding: 14px 0 0 30px;
+    font: 18px/100% "LatoBlackItalic", sans-serif;
+    color: #ffffff;
+}
+.mobile-destination .button {
+    float: left;
+    position: relative;
+    padding: 10px 0 0 50px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.mobile-destination .list-destination {
+    left: 50px;
+    top: 38px;
+}
+.mobile-destination .button .btn-destination-search {
+    font-size: 16px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    color: #04a4a3;
+    background: #f2fafa;
+    border: 0 none;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.buttonHeader {
+    position: absolute;
+    right: 9%;
+    top: 30%;
+}
+
+
+/* border middle */
+#middle .bg-top-middle {
+    display: none;
+}
+
+.magazinepushs ul li .push .visuel img, .products ul li .push .visuel img, .items-produit ul.list-items li .push .visuel img {
+    width: 100%;
+}
+
+.magazinepushs ul li .push, .magazinehighlight .push, .items-produit ul.list-items li .push, .products ul li .push {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.magazinepushs ul li .push .text, .magazinehighlight .push .text, .items-produit ul.list-items li .push .text, .products ul li .push .text {
+    padding: 0 10px 30px 10px;
+}
+.magazinehighlight {
+    padding: 0;
+}
+.magazinepushs ul li .push .corner-top-left, .magazinehighlight .push .corner-top-left,
+.magazinepushs ul li .push .corner-bottom-right, .magazinehighlight .push .corner-bottom-right {
+    display: none;
+}
+
+.magazinepushs ul li.second,
+.magazinepushs ul li, .products ul li, .items-produit ul.list-items li {
+    width: 100%;
+}
+#content .banner-title .magazine .input-magazine-home {
+    transform: translateY(-110px);
+}
+
+#content .banner-title .magazine .input-magazine-home.js-flyout-active {
+	transform: translateY(0);
+	width:100%;
+}
+.concept-mobile{
+    display:block; 
+}
+.img-mobile{
+    border-bottom:10px solid white; 
+}
+.flech-mobile{
+    left: 45%;
+    margin-top: -10px;
+    position: absolute;
+	z-index:2;
+}
+
+
+/* ==========================================================================
+                                    Slideshow
+   ========================================================================== */
+#slideshow-container {
+    margin-top: 0;
+}
+#slideshow {
+    margin-top: 0;    
+}
+
+#slideshow .arguments {
+    right: 0;
+    margin-right: 0;
+}
+
+#slideshow .arguments span {
+    font-size: 16px;
+}
+
+#slideshow .arguments a {
+    padding: 7px 30px;
+}
+
+#slideshow #slides ul li .slide .wrapper {
+    margin-left: -50%;
+}
+
+/* ==========================================================================
+                                    Content
+   ========================================================================== */
+#middle {
+    margin-top: 0;
+}
+
+body.wide #main {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+#main {
+    width: 100%;
+    float: none;
+    margin: 0;
+}
+.module.annuaire {
+  display:none;
+}
+.item-page .visuel {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.navigation {
+    height: auto;
+}
+
+.breadcrumbs {
+    margin-left: 20px;
+}
+
+.item-page .article-content .corner-top-left,
+.item-page .article-content .corner-bottom-right {
+    display: none;
+}
+
+.item-page .visuel img,
+.items .item .visuel img {
+    width: 100%;
+}
+
+.item-page iframe {
+    width: 100%;
+}
+
+#right {
+    display: none;
+}
+
+/* ==========================================================================
+                                    Module
+   ========================================================================== */
+.magazinepushs ul, .products ul {
+    padding: 0;
+	margin-top:5px;
+}
+.magazinehighlight .push .visuel {
+    width: 100%;
+    float: none;
+}
+.magazinehighlight .push .visuel img,
+.magazinepushs ul li.second .push .visuel img {
+    width: 100%;
+}
+.magazinehighlight .push .text {
+    width: auto;
+    float: none;
+}
+.magazinehighlight .push h4 {
+    font: 100 30px/100% "LatoLight", sans-serif
+}
+
+.magazinepushs ul li.general.clear {
+    clear: both;
+}
+.rightcolumn .banner-title .mag-nouvelle-recherche{
+	display:none;
+}
+.items-magazine .results-text{
+	margin-top:-50px;
+}
+
+/* annuaire */
+.annuaire-home .wrapper-big .annuaire .box-mappemonde {
+    display: none;
+}
+
+.annuaire-home .wrapper-big .annuaire .box-right {
+    width: 100%;
+}
+
+/* newseletter */
+#newsletter {
+    height: auto;
+}
+
+#newsletter .box-left,
+#newsletter .box-right {
+    display: block;
+    width: 90%;
+}
+#newsletter .box-right {
+    margin-right: 0;
+    width: 100%;
+}
+#content .banner-title .wrapper {
+	width:100%;
+}
+.recherche-magazine {
+	right:2%;
+}
+#products-before-content .banner-title p.home-page,
+#products-after-content .banner-title p.home-page, 
+.products p.title-header{
+	font-size:18px;
+}
+/* ==========================================================================
+                                    Popup
+   ========================================================================== */
+.popup-search div img{
+  width:100%;
+}
+.popup-search h3{
+    font: 16px/100% "LatoBlackItalic",sans-serif;
+    margin: 10px 0;
+}
+.push-bottom-left{
+	bottom: 0px;
+	width:100%;
+}
+.push-bottom-left .closeCnil{
+	left: 100%;
+	bottom: 45px;
+	margin-left: -155px;
+}

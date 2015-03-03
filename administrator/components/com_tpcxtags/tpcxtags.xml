@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+
+    <name>TpCx Tags</name>
+    <!-- The following elements are optional and free of formatting constraints -->
+    <creationDate>Mars 2013</creationDate>
+    <author>Fabien Vautour</author>
+    <authorEmail>vautour.fabien@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <copyright>Copyright Info</copyright>
+    <license>License Info</license>
+    <!--  The version string is recorded in the components table -->
+    <version>0.0.8</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>Composants permettant de gérer des tags sur les articles</description>
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update> <!-- Runs on update; New in 2.5 -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <!-- Site Main File Copy Section -->
+    <!-- Note the folder attribute: This attribute describes the folder
+    to copy FROM in the package to install therefore files copied
+    in this section are copied from /site/ in the package -->
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>tpcxtags.php</filename>
+        <filename>controller.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+    </files>
+    <administration>
+        <!-- Administration Menu Section -->
+        <menu>TpCx</menu>
+        <submenu>
+            <menu link="option=com_tpcxtags"
+                alt="Tpcx/Tags">Tags</menu>
+                <menu link="option=com_tpcxtagsnews"
+                alt="Tpcx/Newsletter">Newsletter</menu>
+        </submenu>
+        <!-- Administration Main File Copy Section -->
+        <!-- Note the folder attribute: This attribute describes the folder
+        to copy FROM in the package to install therefore files copied
+        in this section are copied from /admin/ in the package -->
+        <files folder="admin">
+            <!-- Admin Main File Copy Section -->
+            <filename>index.html</filename>
+            <filename>tpcxtags.php</filename>
+            <filename>controller.php</filename>
+            <!-- SQL files section -->
+            <folder>sql</folder>
+			<folder>controllers</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+        </files>
+        <languages folder="admin">
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_tpcxtags.ini</language>
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_tpcxtags.sys.ini</language>
+		</languages>
+    </administration>
+
+</extension>

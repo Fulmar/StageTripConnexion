@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset >
+        
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="subject"
+            type="text"
+            label="COM_TPCXSOCIAL_TOPIC_SUBJECT_LABEL"
+            description="COM_TPCXSOCIAL_TOPIC_SUBJECT_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="true"
+        />
+        <field name="alias"
+            type="text"
+            label="JFIELD_ALIAS_LABEL"
+            description="JFIELD_ALIAS_DESC"
+            class="inputbox"
+            size="30"
+        />
+        <field id="published"
+            name="published"
+            type="list"
+            label="JSTATUS"
+            description="JFIELD_PUBLISHED_DESC"
+            class="inputbox"
+            size="1"
+            default="1"
+        >
+            <option value="1">
+                JPUBLISHED</option>
+            <option value="0">
+                JUNPUBLISHED</option>
+            <option value="2">
+                JARCHIVED</option>
+            <option value="-2">
+                JTRASHED</option>
+
+        </field>
+        <field id="locked"
+            name="locked"
+            type="list"
+            label="COM_TPCXSOCIAL_FIELD_TOPIC_LOCKED_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_LOCKED_DESC"
+            class="inputbox"
+            size="1"
+            default="0"
+        >
+            <option value="0">
+                COM_TPCXSOCIAL_FIELD_LOCKED_NO</option>
+            <option value="1">
+                COM_TPCXSOCIAL_FIELD_LOCKED_YES</option>
+
+        </field>
+        <field name="access"
+            type="accesslevel"
+            label="JFIELD_ACCESS_LABEL"
+            description="JFIELD_ACCESS_DESC"
+            class="inputbox"
+            size="1"
+        />
+        <field name="category_id"
+            type="categoryparent"
+            label="JCATEGORY"
+            description="JFIELD_CATEGORY_DESC"
+            class="inputbox"
+            required="true"
+            multiple="true"
+            size="15"
+        />     
+        <field name="tag_id"
+            type="tag"
+            label="COM_TPCXSOCIAL_FIELD_TAG_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_TAG_DESC"
+            class="inputbox"
+            required="true"
+            multiple="true"
+            size="15"
+        />    
+        <field name="description" type="editor"
+            label="COM_TPCXSOCIAL_TOPIC_DESCRIPTION_LABEL"
+            description="COM_TPCXSOCIAL_TOPIC_DESCRIPTION_DESC"
+            class="inputbox"
+            filter="JComponentHelper::filterText"
+            buttons="true"
+            hide="readmore,pagebreak"
+             /> 
+        <field name="ordering"
+            type="orderingtopic"
+            class="inputbox"
+            label="JFIELD_ORDERING_LABEL"
+            description="JFIELD_ORDERING_DESC"
+        />
+        
+        <field name="created_by" type="user"
+            label="JGLOBAL_FIELD_CREATED_BY_LABEL" description="COM_TPCXSOCIAL_FIELD_CREATED_BY_LABEL" />
+            
+        <field name="created" type="calendar" label="COM_TPCXSOCIAL_FIELD_CREATED_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_CREATED_DESC" class="inputbox" size="22"
+            format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+        
+    </fieldset>
+</form>

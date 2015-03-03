@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+    <name>plg_content_tpcxtagarticle</name>
+    <author>Fabien Vautour</author>
+    <creationDate>June 2012</creationDate>
+    <copyright>(C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>vautour.fabien@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>2.5.0</version>
+    <description>PLG_CONTENT_TPCXTAGARTICLE_XML_DESCRIPTION</description>
+    <files>
+        <folder>tpcxtagarticle</folder>
+        <filename plugin="tpcxtagarticle">tpcxtagarticle.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages>
+        <language tag="fr-FR">fr-FR.plg_content_tpcxtagarticle.ini</language>
+        <language tag="fr-FR">fr-FR.plg_content_tpcxtagarticle.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            
+        </fields>
+    </config>
+</extension>

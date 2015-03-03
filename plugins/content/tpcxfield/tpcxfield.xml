@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+    <name>plg_content_tpcximage</name>
+    <author>Fabien Vautour</author>
+    <creationDate>Novembre 2014</creationDate>
+    <copyright>(C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>vautour.fabien@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>2.5.0</version>
+    <description>Permet de rajouter des champs supplémentaires dans le contenu de l'article</description>
+    <files>
+        <folder>tpcximage</folder>
+        <filename plugin="tpcximage">tpcximage.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            
+        </fields>
+    </config>
+</extension>

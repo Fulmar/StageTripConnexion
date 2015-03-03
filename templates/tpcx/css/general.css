@@ -1,0 +1,384 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+p {
+    margin: 0 0 5px 0;
+}
+
+.wrapper {
+    width: 1022px;
+    margin: 0 auto;
+}
+
+.wrapper-big {
+    width: 1108px;
+    margin: 0 auto;
+}
+
+.container-box {
+    overflow: hidden;
+}
+
+.box-left {
+    float: left;
+}
+
+.box-right {
+    float: right;
+}
+
+p.confirm {
+    margin: 5px 0;
+    color: #398b0f;
+    font: 700 14px/120% "LatoBold", sans-serif;
+}
+
+p.error {
+    margin: 5px 0;
+    color: #c81919;
+    font: 700 14px/120% "LatoBold", sans-serif;
+}
+
+.input-travel-text {
+    font: 400 14px/120% "Verdana", sans-serif;
+    background: #f2fafa;
+    color: #cc7028;
+    padding: 5px 7px;
+    border: 1px solid #e7dab0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px 5px;
+    width: 200px;
+}
+
+.input-datepicker {
+    margin-right: 5px;
+}
+
+img.ui-datepicker-trigger {
+    margin-top: -10px;
+}
+
+span.customSelect.error {
+    border: 2px solid #cc0000;
+}
+
+input.error {
+    border: 2px solid #cc0000;
+}
+
+textarea.error {
+    border: 2px solid #cc0000;
+}
+
+label.error {
+    margin-top: 5px;
+    color: #cc0000;
+    font: 700 12px/100% "Verdana", sans-serif;
+}
+
+.textarea-travel {
+    font: 400 14px/120% "Verdana", sans-serif;
+    background: #f2fafa;
+    color: #cc7028;
+    padding: 5px 7px;
+    border: 1px solid #e7dab0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px 5px;
+    width: 95%;
+    height: 100px;
+}
+
+.customSelectMenu {
+    /* This is the default class that is used */
+    /* Put whatever custom styles you want here */
+    font: 400 14px/120% "Verdana", sans-serif;
+    background: #f2fafa;
+    color: #a3a800;
+    padding: 5px 7px;
+    border: 1px solid #e7dab0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px 5px;
+    width: 260px;
+}
+
+.customSelectAnnuaire {
+    /* This is the default class that is used */
+    /* Put whatever custom styles you want here */
+    font: 400 14px/120% "Verdana", sans-serif;
+    background: #f2fafa;
+    color: #04a4a3;
+    padding: 5px 7px;
+    border: 1px solid #e7dab0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px 5px;
+    width: 200px;
+}
+
+.customSelectTravel {
+    /* This is the default class that is used */
+    /* Put whatever custom styles you want here */
+    font: 400 14px/120% "Verdana", sans-serif;
+    background: #f2fafa;
+    color: #cc7028;
+    padding: 5px 7px;
+    border: 1px solid #e7dab0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px 5px;
+    width: 200px;
+}
+
+.customSelectAnnuaire.customSelectHover {
+    /* Styles for when the select box is hovered */
+}
+
+.customSelectAnnuaire.customSelectOpen {
+    /* Styles for when the select box is open */
+}
+
+.customSelectAnnuaire.customSelectFocus {
+    /* Styles for when the select box is in focus */
+}
+
+.customSelectMenu .customSelectInner {
+    /* You can style the inner box too */
+   background: url('../images/puce-select-menu.png') center right no-repeat;
+}
+
+.customSelectAnnuaire .customSelectInner {
+    /* You can style the inner box too */
+   background: url('../images/puce-select.png') center right no-repeat;
+}
+
+.customSelectTravel .customSelectInner {
+    /* You can style the inner box too */
+   background: url('../images/puce-select-travel.png') center right no-repeat;
+}
+.customSelectConcept{
+    background: none repeat scroll 0 0 #f2fafa;
+    border: 1px solid #e7dab0;
+    color: gray;
+    font: 400 14px/120% "Verdana",sans-serif;
+    padding: 7px 7px;
+    width: 250px;
+    margin-left:1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.customSelectConcept .customSelectInner{
+  background: url("../images/puce-select.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+}
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="title"
+            type="text"
+            label="COM_TPCXSOCIAL_CATEGORIES_NAME_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_NAME_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+            required="true"
+        />
+        <field name="alias"
+            type="text"
+            label="JFIELD_ALIAS_LABEL"
+            description="JFIELD_ALIAS_DESC"
+            class="inputbox"
+            size="30"
+        />
+        <field id="published"
+            name="published"
+            type="list"
+            label="JSTATUS"
+            description="JFIELD_PUBLISHED_DESC"
+            class="inputbox"
+            size="1"
+            default="1"
+        >
+            <option value="1">
+                JPUBLISHED</option>
+            <option value="0">
+                JUNPUBLISHED</option>
+            <option value="2">
+                JARCHIVED</option>
+            <option value="-2">
+                JTRASHED</option>
+
+        </field>
+        <field id="visible"
+            name="visible"
+            type="list"
+            label="COM_TPCXSOCIAL_CATEGORIES_VISIBLE_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_VISIBLE_DESC"
+            class="inputbox"
+            size="1"
+            default="1"
+        >
+            <option value="1">
+                COM_TPCXSOCIAL_CATEGORIES_VISIBLE_YES</option>
+            <option value="0">
+                COM_TPCXSOCIAL_CATEGORIES_VISIBLE_NO</option>
+        </field>
+        <field name="access"
+            type="accesslevel"
+            label="JFIELD_ACCESS_LABEL"
+            description="JFIELD_ACCESS_DESC"
+            class="inputbox"
+            size="1"
+        />   
+        <field name="parent_id"
+            type="categoryparent"
+            label="COM_TPCXSOCIAL_CATEGORIES_PARENT_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_PARENT_DESC"
+            class="inputbox"
+        />    
+        <field name="description" type="editor"
+            label="COM_TPCXSOCIAL_CATEGORIES_DESCRIPTION_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_DESCRIPTION_DESC"
+            class="inputbox"
+            filter="JComponentHelper::filterText"
+            buttons="true"
+            hide="readmore,pagebreak"
+             />
+             
+        <field
+            name="topic_ordering"
+            type="text"
+            label="COM_TPCXSOCIAL_CATEGORIES_TOPIC_ORDERING_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_TOPIC_ORDERING_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+        />
+        <field
+            name="topic_number"
+            type="text"
+            label="COM_TPCXSOCIAL_CATEGORIES_TOPIC_NUMBER_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_TOPIC_NUMBER_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+        />        
+        <field
+            name="post_number"
+            type="text"
+            label="COM_TPCXSOCIAL_CATEGORIES_POST_NUMBER_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_POST_NUMBER_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+        />
+        <field
+            name="last_topic_id"
+            type="text"
+            label="COM_TPCXSOCIAL_CATEGORIES_LAST_TOPIC_ID_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_LAST_TOPIC_ID_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+        />
+        <field
+            name="last_topic_post_id"
+            type="text"
+            label="COM_TPCXSOCIAL_CATEGORIES_LAST_TOPIC_POST_ID_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_LAST_TOPIC_POST_ID_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+        />
+        <field
+            name="last_post_time"
+            type="text"
+            label="COM_TPCXSOCIAL_CATEGORIES_LAST_TOPIC_POST_TIME_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_LAST_TOPIC_POST_TIME_DESC"
+            size="40"
+            class="inputbox"
+            default=""
+        />
+        
+        <field name="images"
+            type="media"
+            hide_none="1"
+            label="COM_TPCXSOCIAL_CATEGORIES_IMAGE_LABEL"
+            description="COM_TPCXSOCIAL_CATEGORIES_IMAGE_DESC"
+            />
+            
+        <field name="created_by" type="user"
+            label="JGLOBAL_FIELD_CREATED_BY_LABEL" description="COM_TPCXSOCIAL_FIELD_CREATED_BY_LABEL" />
+            
+        <field name="created" type="calendar" label="COM_TPCXSOCIAL_FIELD_CREATED_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_CREATED_DESC" class="inputbox" size="22"
+            format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+        
+    </fieldset>
+</form>

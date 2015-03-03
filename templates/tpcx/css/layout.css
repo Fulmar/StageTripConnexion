@@ -1,0 +1,260 @@
+/* ==|== layout ============================================================= */
+
+/* ==========================================================================
+                                    Page
+   ========================================================================== */
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background: #ffffff;
+}
+
+#sticky-footer {
+    min-height: 100%;
+}
+
+/* Bloc responsive */
+.mobile-header,
+.concept-mobile{
+    display: none;
+}
+
+/* ==========================================================================
+                                    Header
+   ========================================================================== */
+.header-container {
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background: #ffffff url('../images/bg-header.jpg') top left repeat-x;
+}
+
+.header-container.header-container-home {
+    height: 103px;
+    background: #ffffff url('../images/bg-header-home.jpg') top left repeat-x;
+}
+
+.header-container.slideshow-show {
+    background: transparent url('../images/bg-header.jpg') top left repeat-x;
+}
+
+.header-container.header-container-home.slideshow-show {
+    background: transparent url('../images/bg-header-home.jpg') top left repeat-x;
+}
+
+.header-container .bg-bottom-header {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: url('../images/bg-codpiece-white-bottom.png') top left repeat-x;
+}
+
+.header-container.header-container-home .bg-bottom-header {
+    top: 91px;
+}
+
+#header {
+    position: relative;
+    width: 1022px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    margin-bottom: 1px;
+}
+
+#header .btn {
+    position: absolute;
+    top: 60px;
+    right: 20%;
+}
+
+.header-container-home #header .btn {
+    top: 90px;
+}
+
+#header .logo {
+    float: left;
+    margin-left: 23px;
+    margin-top: 10px;
+}
+
+#header .intro {
+    float: right;
+    margin-top: 25px;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.stamp {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.call-to-action {
+    display: none;
+    float: right;
+    margin: 1px 80px 0 0;
+    padding: 5px 30px;
+    background-image: linear-gradient(#04a4a3, #027070);
+    background-image: -o-linear-gradient(#04a4a3, #027070);
+    background-image: -moz-linear-gradient(#04a4a3, #027070);
+    background-image: -webkit-linear-gradient(#04a4a3, #027070);
+    background-image: -ms-linear-gradient(#04a4a3, #027070);
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#04a4a3, endColorstr=#027070);
+    /* For Internet Explorer 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#04a4a3, endColorstr=#027070)";    
+    background-color: #04a4a3;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font: 16px/100% "LatoBlackItalic", sans-serif;
+    text-decoration: none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.call-to-action .intro-left {
+    float: left;
+    margin-right: 10px;
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.call-to-action input {
+    height: 10px;
+    font-size: 11px;
+}
+
+.call-to-action .btn-destination-search {
+    height: 22px;
+}
+
+/* ==========================================================================
+                                    Slideshow
+   ========================================================================== */
+#slideshow-container {
+    margin-top: 72px;
+}
+
+#slideshow {
+    margin-top: 103px;
+    position: relative;
+    height: 700px;
+    padding-bottom: 4px;
+    z-index: 3;
+}
+
+.select-pays-responsive {
+    display: none;
+}
+
+/* ==========================================================================
+                                    Middle
+   ========================================================================== */
+#middle {
+    position: relative;
+    width: 100%;
+    margin: 72px 0 50px 0;
+    background: url('../images/bg-middle.jpg') top left repeat;
+}
+
+#middle.middle-home {
+    margin: 103px 0 50px 0;
+}
+
+#middle.slideshow-show {
+    margin: 0 0 50px 0;
+}
+
+#middle .bg-top-middle {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    z-index: 2;
+    background: url('../images/bg-codpiece-white-top.png') top left repeat-x;
+}
+
+#middle.middle-home .bg-top-middle {
+    top: 103px;
+}
+
+#middle.slideshow-show .bg-top-middle {
+    position: absolute;
+    top: 0;
+}
+
+#main {
+    float: left;
+    width: 564px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+body.wide #main {
+    float: none;
+    width: auto;
+    margin-right: 20px;
+}
+
+/* ==========================================================================
+                                    Right
+   ========================================================================== */
+#right {
+    float: right;
+    width: 401px;
+    margin-bottom: 20px;
+}
+
+.partenaire #right,
+.produit #right {
+    padding-top: 30px;
+}
+
+body.chronoforms #right {
+    padding-top: 84px;
+}
+
+/* ==========================================================================
+                                    Bottom
+   ========================================================================== */
+#bottom {
+    width: 100%;
+    border-bottom: 10px solid #ffffff;
+}
+/* ==========================================================================
+                         products-enlarge-bottom-content
+   ========================================================================== */ 
+   #products-enlarge-bottom-content {
+    width: 100%;
+    border-bottom: 10px solid #ffffff;
+}
+/* ==========================================================================
+                         products-enlarge-top-content
+   ========================================================================== */ 
+   #products-enlarge-top-content {
+    width: 100%;
+    border-bottom: 10px solid #ffffff;
+	position:relative;
+	overflow:hidden;
+}
+/* ==========================================================================
+                                    Footer
+   ========================================================================== */  
+.footer-container {
+    margin-top: -50px;
+    width: 100%;
+    height: 50px;
+    background: url('../images/bg-footer.gif') top left repeat-x;
+}

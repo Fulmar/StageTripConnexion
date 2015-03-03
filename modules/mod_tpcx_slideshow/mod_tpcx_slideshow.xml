@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="2.5"
+    client="site"
+    method="upgrade">
+    <name>mod_tpcx_slideshow</name>
+    <author>Fabien Vautour</author>
+    <creationDate>Mars 2013</creationDate>
+    <copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>vautour.fabien@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>2.5.0</version>
+    <description>MOD_TPCX_SLIDESHOW_DESCRIPTION</description>
+    <files>
+        <filename module="mod_tpcx_slideshow">mod_tpcx_slideshow.php</filename>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_tpcx_slideshow.xml</filename>
+    </files>
+    <languages>
+        <language tag="fr-FR">fr-FR.mod_tpcx_slideshow.ini</language>
+        <language tag="fr-FR">fr-FR.mod_tpcx_slideshow.sys.ini</language>
+    </languages>
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_ARTICLES_NEWSFLASH" />
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                
+                <field
+                    name="slideshowWidth"
+                    type="text"
+                    label="MOD_TPCX_SLIDESHOWWIDTH_LABEL"
+                    description="MOD_TPCX_SLIDESHOWWIDTH_DESC" />
+                    
+                <field
+                    name="slideshowHeight"
+                    type="text"
+                    label="MOD_TPCX_SLIDESHOWHEIGHT_LABEL"
+                    description="MOD_TPCX_SLIDESHOWHEIGHT_DESC" />
+                
+                <field
+                    name="argument1"
+                    type="text"
+                    label="MOD_TPCX_ARGUMENT1_LABEL"
+                    description="MOD_TPCX_ARGUMENT1_DESC" />
+                    
+                <field
+                    name="argument2"
+                    type="text"
+                    label="MOD_TPCX_ARGUMENT2_LABEL"
+                    description="MOD_TPCX_ARGUMENT2_DESC" />
+                    
+                <field
+                    name="argument3"
+                    type="text"
+                    label="MOD_TPCX_ARGUMENT3_LABEL"
+                    description="MOD_TPCX_ARGUMENT3_DESC" />
+                    
+                <field
+                    name="textbtn"
+                    type="text"
+                    label="MOD_TPCX_TEXTBTN_LABEL"
+                    description="MOD_TPCX_TEXTBTN_DESC" />
+                    
+            </fieldset>
+            
+            <fieldset name="SLIDE1">
+                
+                <field
+                    name="image1"
+                    type="media"
+                    label="MOD_TPCX_IMAGE1_LABEL"
+                    description="MOD_TPCX_IMAGE1_DESC" />
+                    
+                <field
+                    name="text1"
+                    type="text"
+                    label="MOD_TPCX_IMAGE1_TEXT_LABEL"
+                    description="MOD_TPCX_IMAGE1_TEXT_DESC" />
+                    
+                <field
+                    name="link1"
+                    type="text"
+                    label="MOD_TPCX_IMAGE1_LINK_LABEL"
+                    description="MOD_TPCX_IMAGE1_LINK_DESC" />
+                    
+            </fieldset>
+            
+            <fieldset name="SLIDE2">
+                
+                <field
+                    name="image2"
+                    type="media"
+                    label="MOD_TPCX_IMAGE2_LABEL"
+                    description="MOD_TPCX_IMAGE2_DESC" />
+                    
+                <field
+                    name="text2"
+                    type="text"
+                    label="MOD_TPCX_IMAGE2_TEXT_LABEL"
+                    description="MOD_TPCX_IMAGE2_TEXT_DESC" />
+                    
+                <field
+                    name="link2"
+                    type="text"
+                    label="MOD_TPCX_IMAGE2_LINK_LABEL"
+                    description="MOD_TPCX_IMAGE2_LINK_DESC" />
+                    
+            </fieldset>
+            
+            <fieldset name="SLIDE3">
+                
+                <field
+                    name="image3"
+                    type="media"
+                    label="MOD_TPCX_IMAGE3_LABEL"
+                    description="MOD_TPCX_IMAGE3_DESC" />
+                    
+                <field
+                    name="text3"
+                    type="text"
+                    label="MOD_TPCX_IMAGE3_TEXT_LABEL"
+                    description="MOD_TPCX_IMAGE3_TEXT_DESC" />
+                    
+                <field
+                    name="link3"
+                    type="text"
+                    label="MOD_TPCX_IMAGE3_LINK_LABEL"
+                    description="MOD_TPCX_IMAGE3_LINK_DESC" />
+                    
+            </fieldset>
+            
+            <fieldset name="SLIDE4">
+                
+                <field
+                    name="image4"
+                    type="media"
+                    label="MOD_TPCX_IMAGE4_LABEL"
+                    description="MOD_TPCX_IMAGE4_DESC" />
+                    
+                <field
+                    name="text4"
+                    type="text"
+                    label="MOD_TPCX_IMAGE4_TEXT_LABEL"
+                    description="MOD_TPCX_IMAGE4_TEXT_DESC" />
+                    
+                <field
+                    name="link4"
+                    type="text"
+                    label="MOD_TPCX_IMAGE4_LINK_LABEL"
+                    description="MOD_TPCX_IMAGE4_LINK_DESC" />
+                    
+            </fieldset>
+            
+            <fieldset name="SLIDE5">
+                
+                <field
+                    name="image5"
+                    type="media"
+                    label="MOD_TPCX_IMAGE5_LABEL"
+                    description="MOD_TPCX_IMAGE5_DESC" />
+                    
+                <field
+                    name="text5"
+                    type="text"
+                    label="MOD_TPCX_IMAGE5_TEXT_LABEL"
+                    description="MOD_TPCX_IMAGE5_TEXT_DESC" />
+                    
+                <field
+                    name="link5"
+                    type="text"
+                    label="MOD_TPCX_IMAGE5_LINK_LABEL"
+                    description="MOD_TPCX_IMAGE5_LINK_DESC" />
+                    
+            </fieldset>
+
+            <fieldset
+                name="advanced">
+
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="itemid">
+                    <option
+                        value="itemid"></option>
+                </field>
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

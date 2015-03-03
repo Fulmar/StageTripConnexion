@@ -1,0 +1,234 @@
+/* ==========================================================================
+                                    Header
+   ========================================================================== */
+#absolute #popup-email,
+#absolute .push-bottom,
+#absolute .custom{
+    display: none;
+}
+
+#header .logo {
+    display: none;
+}
+
+#header .intro,
+#header .btn {
+    display: none;
+}
+
+#header {
+    display: block;
+}
+
+.stamp {
+    right: 0;
+    display: none;
+}
+
+/* newsletter */
+#newsletter .box-left p input,
+#newsletter .box-left p button.submit {
+    float: none;
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.mobile-destination .button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mobile-destination p.intro {
+    padding-left: 50px;
+}
+.mobile-header .logo .logo-mobile{
+    display:block;
+    margin: 0 5px;
+    padding-top: 20px;
+    width: 159px;
+    height: 43px;
+}
+.mobile-header .logo .logo-tablette{
+   display:none; 
+}
+  
+
+/* ==========================================================================
+                                    Module
+   ========================================================================== */
+#newspaper .box-title {
+    text-align: center;
+    position: relative;
+    left: 0;
+    width: auto;
+    margin-left: 0;
+}
+#newspaper .box-title .text {
+    float: none;
+}
+#newspaper .box-title .picto {
+    display: none;
+}
+
+.magazinehighlight .push h4 {
+    font: 100 20px/100% "LatoLight", sans-serif
+}
+.magazinehighlight .push h4 span {
+    font: 20px/100% "LatoBold", sans-serif
+}
+.magazinehighlight .push .visuel,
+.magazinehighlight .push .text {
+    display: block;
+}
+
+.magazinepushs ul li,
+.magazinepushs ul li.second {
+    display: block;
+    width: 100%;
+}
+.magazinepushs ul li .push .visuel, .magazinehighlight .push .visuel {
+    text-align: left;
+    float: none;
+}
+.magazinepushs ul li .push, .magazinehighlight .push {
+    min-height: auto;
+}
+.magazinepushs ul li.second .push .visuel img {
+    width: 100%;
+}
+.magazinepushs ul li .push .visuel .btn, .magazinehighlight .push .visuel .btn {
+    left: 0;
+}
+#content .banner-title .magazine .input-magazine-home.js-flyout-active {
+	transform: translateY(0);
+	width: 67%;
+}
+/* project */
+#travel-project-container .wrapper-big .travel-project .container-form .box-form {
+    display: block;
+    width: 100%;
+}
+
+#travel-project-container .wrapper-big .travel-project .container-form .box-form-inline label.text {
+    display: block;
+    float: none;
+}
+
+#travel-project-container .wrapper-big .travel-project .container-form .box-pays:first-child {
+    margin-left: 0;
+}
+
+#travel-project-container .wrapper-big .travel-project .container-form p.text-radio-left {
+    float: none;
+    display: block;
+}
+
+#travel-project-container .wrapper-big .travel-project .container-form .container-box.selection-radio,
+#travel-project-container .wrapper-big .travel-project .container-form .container-box.selection-radio2 {
+    margin-left: 0;
+}
+#travel-project-container .wrapper-big .travel-project .container-form .box-hebergement:first-child {
+    margin-left: 0;
+}
+
+#travel-project-container .wrapper-big .travel-project .container-form .container-box .box-33 {
+    display: block;
+    width: 100%;
+}
+
+/* annuaire */
+.annuaire-home .wrapper-big .annuaire .box-left,
+.annuaire-home .wrapper-big .annuaire .box-right,
+.annuaire-home .wrapper-big .annuaire .box-right.box-thematique {
+    width: 100%;
+}
+
+.annuaire-home .wrapper-big .annuaire .box-mappemonde {
+    display: none;
+}
+
+.annuaire-home .wrapper-big .annuaire h2 {
+    margin-bottom: 0;
+    height: auto;
+}
+
+.annuaire-home .wrapper-big .annuaire button.submit {
+    display: block;
+}
+
+/* ==========================================================================
+                                    Slideshow
+   ========================================================================== */
+#slideshow {
+    display: none;
+}
+
+#slideshow .arguments span {
+    display: none;
+}
+
+.select-pays-responsive {
+    padding: 10px 0;
+    display: block;
+}
+
+.select-pays-responsive .form {
+    clear: both;
+    width: 85%;
+    padding: 2% 5%;
+    background-image: linear-gradient(#04a4a3, #027070);
+    background-image: -o-linear-gradient(#04a4a3, #027070);
+    background-image: -moz-linear-gradient(#04a4a3, #027070);
+    background-image: -webkit-linear-gradient(#04a4a3, #027070);
+    background-image: -ms-linear-gradient(#04a4a3, #027070);
+    /* For Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#04a4a3, endColorstr=#027070);
+    /* For Internet Explorer 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#04a4a3, endColorstr=#027070)";    
+    background-color: #04a4a3;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font: 25px/100% "LatoBlackItalic", sans-serif;
+    text-decoration: none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* ==========================================================================
+                                    Annuaire
+   ========================================================================== */
+.module.annuaire {
+    margin-left: 0;
+}
+
+.annuaire .annuaire-default {
+    width: 100%;
+    height: auto;   
+    background: url('../images/responsive/max740/bg-annuaire.png') top left no-repeat;
+}
+
+.annuaire .annuaire-default .container-box .box-left,
+.annuaire .annuaire-default .container-box .box-right {
+    width: 100%;
+    display: block;
+    border-left: none;
+}
+
+.annuaire .annuaire-default .container-box .box-right .box {
+    padding-left: 0;
+}
+/* ==========================================================================
+                                    Popup
+   ========================================================================== */
+.push-bottom-left {
+	font-size:12px;
+}
+.push-bottom-left .closeCnil{
+margin-left:-137px;
+}

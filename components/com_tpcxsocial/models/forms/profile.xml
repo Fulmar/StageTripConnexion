@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset >
+        
+        <field name="name"
+            id="register-name"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_NAME_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_NAME_DESC"
+            class="input-text required"
+        />
+        <field name="username"
+            id="register-username"
+            type="text"
+            class="input-text required"
+            description="COM_TPCXSOCIAL_USER_FIELD_USERNAME_DESC"
+            label="COM_TPCXSOCIAL_USER_FIELD_USERNAME_LABEL"
+            message="COM_TPCXSOCIAL_REGISTER_USERNAME_MESSAGE"
+            validate="username"
+        />
+        <field name="email1"
+            id="register-email1"
+            type="text"
+            label="COM_TPCXSOCIAL_USER_FIELD_EMAIL_LABEL"
+            description="COM_TPCXSOCIAL_USER_FIELD_EMAIL_DESC"
+            message="COM_TPCXSOCIAL_REGISTER_EMAIL1_MESSAGE"
+            validate="email"
+            class="input-text required"
+        />
+
+        <field name="password1"
+            id="register-password1"
+            type="password"
+            autocomplete="off"
+            description="COM_TPCXSOCIAL_USER_FIELD_PASSWORD_LABEL"
+            message="COM_TPCXSOCIAL_REGISTER_PASSWORD1_MESSAGE"
+            filter="raw"
+            label="JGLOBAL_PASSWORD"
+            class="input-text"
+            field="password2"
+            validate="equals"
+        />
+
+        <field name="password2"
+            id="register-password2"
+            type="password"
+            autocomplete="off"
+            description="COM_TPCXSOCIAL_USER_FIELD_PASSWORD2_DESC"
+            filter="raw"
+            label="COM_TPCXSOCIAL_USER_FIELD_PASSWORD2_LABEL"
+            message="COM_TPCXSOCIAL_REGISTER_PASSWORD2_MESSAGE"
+            class="input-text"
+        />
+        
+        <field name="firstname"
+            id="register-firstname"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_FIRSTNAME_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_FIRSTNAME_DESC"
+            class="input-text required"
+        />
+        
+        <field name="country"
+            id="register-country"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_COUNTRY_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_COUNTRY_DESC"
+            class="input-text required"
+        />
+        
+        <field name="city"
+            id="register-city"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_CITY_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_CITY_DESC"
+            class="input-text required"
+        />
+        
+        <field name="birthday"
+            id="register-birthday"
+            type="calendar"
+            label="COM_TPCXSOCIAL_FIELD_BIRTHDAY_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_BIRTHDAY_DESC"
+            class="input-text required"
+            format="%Y-%m-%d"
+        />
+        
+        <field name="avatar"
+            id="register-avatar"
+            type="file"
+            label="COM_TPCXSOCIAL_FIELD_AVATAR_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_AVATAR_DESC"
+            class="input-text required"
+        />
+        
+        <field name="country_visited"
+            id="register-country-visited"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_COUNTRY_VISITED_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_COUNTRY_VISITED_DESC"
+            class="input-text required"
+        />
+        
+        <field name="country_last"
+            id="register-country-last"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_COUNTRY_LAST_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_COUNTRY_LAST_DESC"
+            class="input-text required"
+        />
+        
+        <field name="quote"
+            id="register-quote"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_QUOTE_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_QUOTE_DESC"
+            class="input-text required"
+        />
+        
+        <field name="hobbies"
+            id="register-hobbies"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_HOBBIES_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_HOBBIES_DESC"
+            class="input-text required"
+        />
+        
+        <field
+            name="captcha"
+            type="captcha"
+            label="COM_TPCXSOCIAL_CAPTCHA_LABEL"
+            description="COM_TPCXSOCIAL_CAPTCHA_DESC"
+            validate="captcha"
+        />
+        
+        
+    </fieldset>
+    <field name="groups" type="hidden" />
+</form>

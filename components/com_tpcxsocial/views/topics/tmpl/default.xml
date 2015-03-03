@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_TPCXSOCIAL_TOPICS_VIEW_DEFAULT_TITLE">
+        <message>
+            <![CDATA[COM_TPCXSOCIAL_TOPICS_VIEW_DEFAULT_DESC]]>
+        </message>
+    </layout>
+    <!-- Add fields to the parameters object for the layout. -->
+    <fields name="params">
+        <!-- Basic options. -->
+        <fieldset name="basic"
+            label="COM_TPCXSOCIAL_SETTINGS_LABEL"
+            addfieldpath="/administrator/components/com_tpcxsocial/models/fields">
+
+            <field
+                name="category_destination"
+                type="category"
+                label="COM_TPCXSOCIAL_CATEGORY_DESTINATION_LABEL"
+                description="COM_TPCXSOCIAL_CATEGORY_DESTINATION_DESC" />
+        </fieldset>
+    </fields>
+</metadata>

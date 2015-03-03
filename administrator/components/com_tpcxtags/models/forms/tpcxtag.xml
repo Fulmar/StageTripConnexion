@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+                name="id"
+                type="hidden"
+        />
+        <field
+                name="tag"
+                type="text"
+                label="Tag"
+                description="Tag"
+                size="40"
+                class="inputbox"
+                default=""
+        />
+        <field id="category"
+            name="category"
+            type="list"
+            label="Catégorie"
+            description="Catégorie du tag associée"
+            class="inputbox"
+            size="1"
+        >
+            <option value="thematique">
+                Thématique</option>
+            <option value="continent">
+                Continents</option>
+            <option value="pays">
+                Pays</option>
+        </field>
+        <field id="subcategory"
+            name="subcategory"
+            type="sql"
+            query="SELECT id AS value, tag as subcategory FROM #__tpcxtags WHERE category = 'continent'"
+            label="Sous catégorie"
+            description="Sous catégorie du tag associée (uniquement pour les pays)"
+            class="inputbox">
+                <option value="">
+                --- Choisissez ---</option>
+            </field>
+            
+    </fieldset>
+</form>

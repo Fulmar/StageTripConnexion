@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="2.5"
+    client="site"
+    method="upgrade">
+    <name>mod_tpcx_popup</name>
+    <creationDate>21/04/2014</creationDate>
+    <author>Fabien Vautour</author>
+    <authorEmail>vautour.fabien@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>1.0</version>
+    <copyright>Copyright (C) 2005 - 2011 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    
+    <description>Module popup. Affiche une popup avec formulaire de pré-inscription</description>
+    <files>
+        <filename module="mod_rda_popup">mod_rda_popup.php</filename>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_rda_popup.xml</filename>
+    </files>
+    
+    <config>
+        
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="cookie_expire"
+                    type="text"
+                    label="Durée d'expiration du cookie"
+                    description="Définir la durée d'expiration du cookie afin de réafficher la popup (en secondes)" />
+                <field
+                    name="show_popup"
+                    type="text"
+                    label="Délai avant affichage de la popup"
+                    description="Définir le délai avant l'affichage de la popup (en millisecondes)" />
+                <field
+                    name="count_show"
+                    type="text"
+                    label="Nombre de fois ou doit s'afficher la popup"
+                    description="Définir le nombre de fois ou la popup doit s'afficher" />
+                <field
+                    name="reshow_popup"
+                    type="text"
+                    label="Nombres de secondes avant réaffichage de la popup"
+                    description="Définir le nombre de secondes avant que la popup doit se réafficher" />
+            </fieldset>
+
+            <fieldset
+                name="advanced">
+
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="itemid">
+                    <option
+                        value="itemid"></option>
+                </field>
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

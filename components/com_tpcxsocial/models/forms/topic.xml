@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="credentials" addfieldpath="/administrator/components/com_tpcxsocial/models/fields">
+
+		<field name="subject" type="text"
+			class="input-text required"
+			label="COM_TPCXSOCIAL_SUBJECT_LABEL"
+		/>
+		
+        <field name="description"
+            type="textarea"
+            description="COM_TPCXSOCIAL_DESCRIPTION_DESC"
+            class="input-text required"
+            filter="safehtml"
+            label="COM_TPCXSOCIAL_DESCRIPTION_LABEL"
+            size="30"
+        />
+        
+        <field name="tags"
+            type="list"
+            description="COM_TPCXSOCIAL_TAGS_DESC"
+            label="COM_TPCXSOCIAL_TAGS_LABEL"
+            size="30"
+            multiple="true"
+        />
+        <field name="tags_value" type="text"
+            class="input-text required"
+        />
+	</fieldset>
+</form>

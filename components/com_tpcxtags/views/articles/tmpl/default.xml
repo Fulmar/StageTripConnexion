@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Liste d'articles">
+        <message>
+                <![CDATA[Liste d'articles avec paramètres propres au site Trip Connexion]]>
+        </message>
+    </layout>
+    <fields name="params">
+        <fieldset name="request">
+            <field
+                name="category"
+                type="category"
+                id="category"
+                extension="com_content"
+                required="true"
+                description="Catégorie devant être affichée"
+                label="Catégorie"
+            />
+            <field
+                name="type"
+                type="list"
+                id="type"
+                required="true"
+                description="Page magazine ou page partenaire. La page partenaire ne tiendra pas compte des filtres ci-dessous"
+                label="Type de page"
+            >
+                 <option value="">--- Choisissez ---</option>
+                 <option value="magazine">Magazine</option>
+                 <option value="partenaire">Partenaire</option>
+                 <option value="produit">Produit</option>
+            </field>
+            <field name="is_thematique" 
+                type="radio" 
+                default="0" 
+                label="Filtre thématique" 
+                description="Sélectionnez oui si les articles doivent être filtrés sur une thématique en particulier">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+            </field>
+            <field
+                name="listthematiques"
+                type="sql"
+                id="listthematiques"
+                query="SELECT id AS value, tag as listthematiques FROM #__tpcxtags WHERE category = 'thematique'"
+                description="Thématique"
+                label="Thématique"
+            >
+                 <option value="">--- Choisissez ---</option>
+            </field>
+            <field name="is_continent" 
+                type="radio" 
+                default="0" 
+                label="Filtre continent" 
+                description="Sélectionnez oui si les articles doivent être filtrés sur un continent en particulier">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+            </field>
+            <field
+                name="listcontinents"
+                type="sql"
+                id="listcontinents"
+                query="SELECT id AS value, tag as listcontinents FROM #__tpcxtags WHERE category = 'continent'"
+                description="Continents"
+                label="Continents"
+            >     
+                <option value="">--- Choisissez ---</option>
+            </field>
+            <field name="is_pays" 
+                type="radio" 
+                default="0" 
+                label="Filtre pays" 
+                description="Sélectionnez oui si les articles doivent être filtrés sur un pays en particulier">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+            </field>
+            <field
+                name="listpays"
+                type="sql"
+                id="listpays"
+                query="SELECT id AS value, tag as listpays FROM #__tpcxtags WHERE category = 'pays'"
+                description="Pays"
+                label="Pays"
+            >
+                <option value="">--- Choisissez ---</option>
+            </field>
+            <field
+                name="excluded_article"
+                type="text"
+                id="excluded_article"
+                description="ID des articles à exclure. Séparé par des virgules (;) si il y en a plusieurs"
+                label="ID des articles à exclure"
+            >
+                <option value="">--- Choisissez ---</option>
+            </field>
+            <field
+                name="limit"
+                type="text"
+                id="limit"
+                default="3"
+                description="Limitation des résultats affichés"
+                label="Limitation des résultats"
+            >
+                <option value="">--- Choisissez ---</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

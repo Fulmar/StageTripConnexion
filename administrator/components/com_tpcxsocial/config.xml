@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset
+        name="group_default"
+        label="COM_TPCXSOCIAL_CONFIG_DEFAULT_SETTINGS_LABEL"
+        description="COM_TPCXSOCIAL_CONFIG_DEFAULT_SETTINGS_DESC"
+    >
+        <field
+            name="group_default"
+            type="usergroup"
+            label="COM_TPCXSOCIAL_FIELD_GROUP_DEFAULT_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_GROUP_DEFAULT_DESC"
+            default="0"
+        />
+        <field
+            name="groups_id"
+            type="usergroup"
+            label="COM_TPCXSOCIAL_FIELD_GROUP_IDS_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_GROUP_IDS_DESC"
+            default="0"
+            multiple="true"
+        />
+        <field
+            name="fb_app_id"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_FB_APP_ID_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_FB_APP_ID_DESC"
+        />
+        <field
+            name="fb_secret_key"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_FB_SECRET_KEY_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_FB_SECRET_KEY_DESC"
+        />
+    </fieldset>
+</config>

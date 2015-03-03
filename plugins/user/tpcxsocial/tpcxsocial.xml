@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="user">
+	<name>Utilisateurs - Trip Connexion Social</name>
+	<author>Fabien Vautour</author>
+	<creationDate>Mars 2014</creationDate>
+	<copyright>(C) 2005 - 2009 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>vautour.fabien@gmail.com</authorEmail>
+	<version>2.5.0</version>
+	<description>Foncions pour Trip Connexion Social permettant d'intéragir sur les utilisateurs</description>
+	<files>
+		<filename plugin="tpcxsocial">tpcxsocial.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		
+	</config>
+</extension>

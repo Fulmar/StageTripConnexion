@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="fields">
+        <fieldset name="fields" label="Tripconnexion - Champs supplémentaires">
+            <field
+                name="image_header"
+                type="media"
+                description="Choisir l'image affiché dans le bandeau du site"
+                label="Image bandeau du site"
+                class="inputbox"
+            />
+        </fieldset>
+    </fields>
+</form>

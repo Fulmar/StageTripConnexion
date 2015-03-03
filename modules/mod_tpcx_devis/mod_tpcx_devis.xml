@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="2.5"
+    client="site"
+    method="upgrade">
+    <name>mod_tpcx_devis</name>
+    <author>Florent Fulmar</author>
+    <creationDate>Janvier 2015</creationDate>
+    <copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>fulmar.florent@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>2.5.0</version>
+    <description>MOD_TPCX_DEVIS affiche le devis sur mesure dans la HPheader</description>
+    <files>
+        <filename module="mod_tpcx_devis">mod_tpcx_devis.php</filename>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_tpcx_devis.xml</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                
+                <field
+                    name="conceptlink"
+                    type="menuitem"
+                    label="MOD_TPCX_devis_LINK_LABEL"
+                    description="MOD_TPCX_devis_LINK_DESC" />
+                    
+            </fieldset>
+
+            <fieldset name="advanced">
+
+               
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>

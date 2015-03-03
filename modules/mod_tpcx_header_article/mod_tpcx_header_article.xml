@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="2.5"
+    client="site"
+    method="upgrade">
+    <name>TPCX - module Bandeau haut article</name>
+    <creationDate>23/11/2014</creationDate>
+    <author>Fabien Vautour</author>
+    <authorEmail>vautour.fabien@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>1.0</version>
+    <copyright>Copyright (C) 2005 - 2011 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    
+    <description>Module bandeau haut</description>
+    <files>
+        <filename module="mod_tpcx_header_article">mod_tpcx_header_article.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_tpcx_header_article.xml</filename>
+    </files>
+    
+    <config>
+        
+        
+    </config>
+</extension>

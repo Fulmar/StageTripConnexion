@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset >
+        
+        <field
+            name="user_id"
+            type="hidden"
+        />
+        <field name="name"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_NAME_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_NAME_DESC"
+            class="inputbox"
+            required="true"
+        />
+        <field name="username" type="text"
+            class="inputbox"
+            description="COM_TPCXSOCIAL_USER_FIELD_USERNAME_DESC"
+            label="COM_TPCXSOCIAL_USER_FIELD_USERNAME_LABEL"
+            required="true"
+            size="30"
+        />
+        <field name="email"
+            type="text"
+            label="COM_TPCXSOCIAL_USER_FIELD_EMAIL_LABEL"
+            description="COM_TPCXSOCIAL_USER_FIELD_EMAIL_DESC"
+            class="inputbox"
+            required="true"
+        />
+
+        <field name="password" type="password"
+            autocomplete="off"
+            class="inputbox validate-password"
+            description="COM_TPCXSOCIAL_USER_FIELD_PASSWORD_LABEL"
+            filter="raw"
+            label="JGLOBAL_PASSWORD"
+            size="30"
+        />
+
+        <field name="password2" type="password"
+            autocomplete="off"
+            class="inputbox validate-password"
+            description="COM_TPCXSOCIAL_USER_FIELD_PASSWORD2_DESC"
+            filter="raw"
+            label="COM_TPCXSOCIAL_USER_FIELD_PASSWORD2_LABEL"
+            size="30"
+            validate="equals"
+            field="password2"
+        />
+
+        <field
+            name="registerDate"
+            type="calendar"
+            class="readonly"
+            label="COM_TPCXSOCIAL_USER_FIELD_REGISTERDATE_LABEL"
+            description="COM_TPCXSOCIAL_USER_FIELD_REGISTERDATE_DESC"
+            readonly="true"
+            format="%Y-%m-%d %H:%M:%S"
+            size="22"
+            filter="user_utc"
+        />
+
+        <field
+            name="lastvisitDate"
+            type="calendar"
+            class="readonly"
+            label="COM_TPCXSOCIAL_USER_FIELD_LASTVISIT_LABEL"
+            description="COM_TPCXSOCIAL_USER_FIELD_LASTVISIT_DESC"
+            readonly="true"
+            format="%Y-%m-%d %H:%M:%S"
+            size="22"
+            filter="user_utc"
+        />
+        <field
+                name="block"
+                type="radio"
+                default="0"
+                label="COM_TPCXSOCIAL_USER_FIELD_BLOCK_LABEL"
+                description="COM_TPCXSOCIAL_USER_FIELD_BLOCK_DESC">
+                <option
+                    value="0">JNO</option>
+                <option
+                    value="1">JYES</option>
+        </field>
+        
+        
+        
+        <field name="firstname"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_FIRSTNAME_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_FIRSTNAME_DESC"
+            class="inputbox"
+            required="true"
+        />
+        
+        <field name="country"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_COUNTRY_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_COUNTRY_DESC"
+            class="inputbox"
+        />
+        
+        <field name="city"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_CITY_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_CITY_DESC"
+            class="inputbox"
+        />
+        
+        <field name="birthday"
+            type="calendar"
+            label="COM_TPCXSOCIAL_FIELD_BIRTHDAY_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_BIRTHDAY_DESC"
+            class="inputbox"
+            format="%Y-%m-%d"
+        />
+        
+        <field name="avatar"
+            type="media"
+            label="COM_TPCXSOCIAL_FIELD_AVATAR_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_AVATAR_DESC"
+            class="inputbox"
+        />
+        
+        <field name="country_visited"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_COUNTRY_VISITED_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_COUNTRY_VISITED_DESC"
+            class="inputbox"
+        />
+        
+        <field name="country_last"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_COUNTRY_LAST_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_COUNTRY_LAST_DESC"
+            class="inputbox"
+        />
+        
+        <field name="quote"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_QUOTE_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_QUOTE_DESC"
+            class="inputbox"
+        />
+        
+        <field name="hobbies"
+            type="text"
+            label="COM_TPCXSOCIAL_FIELD_HOBBIES_LABEL"
+            description="COM_TPCXSOCIAL_FIELD_HOBBIES_DESC"
+            class="inputbox"
+        />
+        
+        
+    </fieldset>
+    <field name="groups" type="hidden" />
+</form>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+    <name>plg_content_tpcxmenu</name>
+    <author>Fabien Vautour</author>
+    <creationDate>June 2012</creationDate>
+    <copyright>(C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>vautour.fabien@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>2.5.0</version>
+    <description>PLG_CONTENT_TPCXMENU_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="tpcxmenu">tpcxmenu.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages>
+        <language tag="fr-FR">fr-FR.plg_content_tpcxmenu.ini</language>
+        <language tag="fr-FR">fr-FR.plg_content_tpcxmenu.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                    <field name="menutypemagazine" type="text" default="menuarticlesmagazine"
+                        label="PLG_CONTENT_TPCXMENU_MENUMAGAZINE_LABEL"
+                        description="PLG_CONTENT_TPCXMENU_MENUMAGAZINE_DESC" />
+                    <field name="menutypepartenaire" type="text" default="menuarticlespartenaire"
+                        label="PLG_CONTENT_TPCXMENU_MENUPARTENAIRE_LABEL"
+                        description="PLG_CONTENT_TPCXMENU_MENUPARTENAIRE_DESC" />
+                    <field name="menutypeproduit" type="text" default="menuarticlesproduit"
+                        label="PLG_CONTENT_TPCXMENU_MENUPRODUITS_LABEL"
+                        description="PLG_CONTENT_TPCXMENU_MENUPRODUITS_DESC" />
+                    <field name="catidmagazine" type="text" default="8"
+                        label="PLG_CONTENT_TPCXMENU_CATEIDMAGAZINE_LABEL"
+                        description="PLG_CONTENT_TPCXMENU_CATEIDMAGAZINE_DESC" />
+                    <field name="catidpartenaire" type="text" default="9"
+                        label="PLG_CONTENT_TPCXMENU_CATEIDPARTENAIRE_LABEL"
+                        description="PLG_CONTENT_TPCXMENU_CATEIDPARTENAIRE_DESC" />
+                    <field name="catidproduit" type="text" default="10"
+                        label="PLG_CONTENT_TPCXMENU_CATEIDPRODUITS_LABEL"
+                        description="PLG_CONTENT_TPCXMENU_CATEIDPRODUITS_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

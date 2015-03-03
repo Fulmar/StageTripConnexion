@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="2.5.0" method="upgrade">
+ <name>Trip Connexion Social Package</name>
+ <author>Fabien Vautour</author>
+ <creationDate>Avril 2014</creationDate>
+ <packagename>tpcxsocial</packagename>
+ <version>1.0.0</version>
+ <packager>Fabien Vautour</packager>
+ <description>Package Trip Connexion Social</description>
+ <files folder="packages">
+   <file type="component" id="com_tpcxsocial" >com_tpcxsocial.zip</file>
+   <file type="plugin" id="aut_tpcxsocial" group="authentication">plg_aut_tpcxsocial.zip</file>
+   <file type="plugin" id="user_tpcxsocial" group="user">plg_user_tpcxsocial.zip</file>
+   <file type="module" id="mod_tpcxsocial">mod_tpcxsocial.zip</file>
+ </files>
+ </extension>
